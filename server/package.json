@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@prisma/client": "^4.6.1",
-    "@trpc/server": "^10.0.0-rc.7",
+    "@trpc/server": "^9.27.4",
     "dotenv": "^16.0.3",
     "fastify": "^4.9.2",
     "fastify-plugin": "^4.3.0",
