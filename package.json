@@ -1,0 +1,9 @@
+{
+  "name": "gai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
