@@ -16,7 +16,9 @@
     "generate": "prisma generate"
   },
   "devDependencies": {
+    "@types/localtunnel": "^2.0.1",
     "@types/node": "^18.11.9",
+    "localtunnel": "^2.0.2",
     "pino-pretty": "^9.1.1",
     "prisma": "^4.6.1",
     "ts-node": "^10.9.1",
