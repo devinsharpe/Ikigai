@@ -4,6 +4,7 @@ import { env } from "./env";
 import fastify from "fastify";
 import { fastifyTRPCPlugin } from "@trpc/server/adapters/fastify";
 import prismaPlugin from "./plugins/prisma";
+import routes from "./routes";
 
 const envToLogger = {
   development: {
@@ -29,6 +30,7 @@ server.register(fastifyTRPCPlugin, {
   prefix: "/trpc",
   trpcOptions: { router: appRouter, createContext }
 });
+server.register(routes);
 
 export const closeServer = () => server.close();
 

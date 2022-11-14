@@ -4,16 +4,14 @@ import {
   FastifyPluginOptions
 } from "fastify";
 
-import auth from "./auth";
 import fp from "fastify-plugin";
-import health from "./health";
+import google from "./google";
 
 const routes: FastifyPluginCallback = (
   server: FastifyInstance,
   options: FastifyPluginOptions
 ) => {
-  server.register(health, { prefix: "/health" });
-  server.register(auth, { prefix: "/auth" });
+  server.register(google, { prefix: `${options.prefix}/google` });
 };
 
 export default fp(routes);
