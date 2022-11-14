@@ -9,3 +9,17 @@ datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
 }
+
+enum AuthStrategy {
+    apple    @map("APPLE")
+    google   @map("GOOGLE")
+    password @map("PASSWORD")
+}
+
+model User {
+    id        Int          @id @default(autoincrement())
+    email     String       @unique
+    name      String?
+    strategy  AuthStrategy
+    profileId String?
+}
