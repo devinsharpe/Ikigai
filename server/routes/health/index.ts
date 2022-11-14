@@ -1,12 +1,12 @@
 import {
   FastifyInstance,
-  FastifyPluginAsync,
+  FastifyPluginCallback,
   FastifyPluginOptions
 } from "fastify";
 
 import fp from "fastify-plugin";
 
-const heatlhRoutes: FastifyPluginAsync = async (
+const heatlhRoutes: FastifyPluginCallback = (
   server: FastifyInstance,
   options: FastifyPluginOptions
 ) => {
