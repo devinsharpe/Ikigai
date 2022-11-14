@@ -5,6 +5,7 @@
   "license": "UNLICENSED",
   "private": true,
   "workspaces": [
+    "gai-app",
     "gai-server"
   ],
   "devDependencies": {
