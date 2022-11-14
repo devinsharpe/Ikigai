@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "gai-server"
+  ],
   "devDependencies": {
     "typescript": "^4.8.4"
   }
